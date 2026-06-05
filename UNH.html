@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guide | United Nations High Commissioner for Refugees (UNHCR)</title>
+    <!-- Tailwind CSS for modern layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* UNHCR Premium Gradient Theme (Official UN Blue to Deep Navy) */
+        .unhcr-gradient {
+            background: linear-gradient(135deg, #0077c8 0%, #1e3a8a 100%);
+        }
+        .unhcr-accent-text {
+            color: #38bdf8;
+        }
+        .unhcr-accent-bg {
+            background-color: #0077c8;
+        }
+        .unhcr-blue-text {
+            color: #0077c8;
+        }
+        .tab-active {
+            border-bottom: 4px solid #0077c8;
+            color: #1e3a8a;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="unhcr-gradient text-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 py-12 text-center relative overflow-hidden">
+            <!-- Decorative Background Logo Outline Placeholder -->
+            <div class="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+                <i class="fa-solid fa-hands-holding-child text-[300px]"></i>
+            </div>
+            
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-3 bg-white/10 px-4 py-1.5 rounded-full text-sm font-medium tracking-wide mb-4 backdrop-blur-sm border border-white/10">
+                    <i class="fa-solid fa-passport text-sky-300"></i> Protecting the Rights of the Displaced
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2">UNITED NATIONS HIGH COMMISSIONER FOR REFUGEES</h1>
+                <p class="text-xl unhcr-accent-text font-medium tracking-wider mb-6">OFFICIAL DELEGATE BACKGROUND STUDY GUIDE</p>
+                <div class="w-24 h-1 bg-sky-400 mx-auto rounded-full"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Topic Sticky Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-center space-x-2 md:space-x-8">
+                <button onclick="switchTopic('topic-a')" id="btn-topic-a" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all tab-active focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-map-location-dot"></i> Topic A: West Bank & UNRWA Crisis
+                </button>
+                <button onclick="switchTopic('topic-b')" id="btn-topic-b" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-fingerprint"></i> Topic B: Digital Borders & 1951 Convention
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-10 md:px-8">
+        
+        <!-- ================= TOPIC A SECTION ================= -->
+        <div id="topic-a" class="space-y-12 transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-blue-700 uppercase block mb-2">Agenda Item I</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Erased from the Map — Forced Displacement, UNRWA's Operational Collapse, and the Statelessness Crisis in the Occupied West Bank</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-file-text unhcr-blue-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">This topic examines the worsening humanitarian and legal crisis faced by Palestinian refugees in the occupied West Bank, focusing on the weakening capacity of UNRWA and the resulting rise in statelessness and forced displacement. It highlights how institutional breakdown, ongoing conflict, and restrictions on movement contribute to the “erasure” of refugee populations from legal and geographic recognition.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-clock-rotate-left unhcr-blue-text"></i> History and Background</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The Palestinian refugee crisis began in 1948 after the Arab-Israeli conflict and mass displacement (Al-Nakba).</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">UNRWA was established in 1949 to provide humanitarian assistance, education, healthcare, and relief services.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The occupied West Bank has since remained under complex administrative control, with layered governance structures.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Over decades, political instability, settlement expansion, and movement restrictions have deepened statelessness.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Recent funding shortages and political pressures have significantly reduced UNRWA’s operational capacity.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Operational Collapse of UNRWA</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Critical service updates across education, emergency healthcare, and food assistance are facing heavy disruptions.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Forced Displacement</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Accelerated displacement dynamics resulting from ongoing settlement expansion and military operations.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Legal Statelessness</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">A complete absence of clear citizenship pathways leaves generations in continuous legal limbo.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Restrictions on Movement & Access</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Proliferation of physical barriers, permits, and military checkpoints limiting basic geographic access.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Erosion of Protection Frameworks</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">International refugee frameworks are losing institutional leverage within the administrative landscape.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Aid Politicization & Funding Crises</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Volatile donor contributions and geopolitical pressures threaten the predictable delivery of aid.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-users unhcr-blue-text"></i> Committee Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-shield-dog"></i> UNHCR</h4>
+                        <p class="text-xs text-gray-600">Maintains a historically limited mandate in Palestine relative to UNRWA, requiring complex institutional coordination.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-house-medical-flag"></i> UNRWA</h4>
+                        <p class="text-xs text-gray-600">The primary operational body responsible for executing frontline humanitarian mandates since 1949.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-gavel"></i> State of Israel</h4>
+                        <p class="text-xs text-gray-600">The occupying power controlling geographic security administration, movement parameters, and border dynamics.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-building-user"></i> Palestinian Authority</h4>
+                        <p class="text-xs text-gray-600">Exercises fractional domestic administrative governance within designated enclaves under international treaties.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-mountain-city"></i> Neighboring Arab States</h4>
+                        <p class="text-xs text-gray-600">Sovereign regional host nations (Jordan, Lebanon, Syria) absorbing long-term regional migration pressures.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-hand-holding-dollar"></i> International Donors</h4>
+                        <p class="text-xs text-gray-600">Major financial contributors (EU, USA, Gulf States) driving fiscal sustainability or policy shifts.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all lg:col-span-2">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-people-group"></i> Refugee Communities</h4>
+                        <p class="text-xs text-gray-600">Palestinian refugee networks directly enduring deteriorating socio-economic frameworks and identity erasure.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-simple unhcr-blue-text"></i> Systemic Impacts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-gray-100">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-hand-holding-hand text-red-600"></i> Socio-Economic Burden</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Sharp increases in structural humanitarian dependency.</li>
+                            <li>Deepening multi-generational poverty rates.</li>
+                            <li>Severe educational disruption for vulnerable youth.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-gray-100">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-brain text-purple-600"></i> Institutional & Psychological</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Widespread trauma and deep generational instability.</li>
+                            <li>Pervasive erosion of trust in formal international frameworks.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-gray-100 md:col-span-2 lg:col-span-1">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-globe text-blue-600"></i> Geopolitical Security</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Severe weakening of international refugee protection norms.</li>
+                            <li>Escalating regional volatility and unmanaged migration fluxes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-lightbulb text-amber-500"></i> Proposed Solutions Framework</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">01. Stabilize UNRWA Financing</span>
+                        <p class="text-xs text-gray-600">Secure resilient, long-term, and insulated donor funding channels to neutralize systemic budgetary disruptions.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">02. Emergency Safeguards</span>
+                        <p class="text-xs text-gray-600">Deploy immediate protection mechanisms to counter forced internal relocation patterns in vulnerable zones.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">03. UNHCR-UNRWA Integration</span>
+                        <p class="text-xs text-gray-600">Coalign tracking metrics and share institutional expertise under a single, unified operational framework.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">04. Legal Protections</span>
+                        <p class="text-xs text-gray-600">Enforce binding international legal accountability measures against illegal infrastructure demolition and spatial displacement.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">05. Digital Archiving Platforms</span>
+                        <p class="text-xs text-gray-600">Leverage decentralized cloud networks for sovereign, reliable identity retention for displaced populations.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">06. Diplomatic Negotiations</span>
+                        <p class="text-xs text-gray-600">Reintroduce structured, high-level dialogues targetting legal right-of-return mechanics and durable state solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================= TOPIC B SECTION ================= -->
+        <div id="topic-b" class="space-y-12 hidden transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-blue-700 uppercase block mb-2">Agenda Item II</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">The Invisible Cage — Redrafting the 1951 Refugee Convention in the Age of AI Surveillance, Biometric Borders, and Erosion of the Right to Seek Asylum</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-file-text unhcr-blue-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">This topic explores how modern technologies—AI surveillance systems, biometric identification, and automated border control—are transforming global asylum systems. It questions whether the current legal framework, based on the 1951 Refugee Convention, is still adequate in protecting the right to seek asylum in a digitized and securitized world.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-clock-rotate-left unhcr-blue-text"></i> History and Background</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The 1951 Refugee Convention was created in response to mass displacement after World War II.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">It defines a refugee as someone unable to return to their country due to a well-founded fear of persecution.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The 1967 Protocol modernized the document by removing original geographical and temporal restrictions.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The core mechanics were fundamentally designed for analog border structures, not digital surveillance states.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-blue-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">In recent years, modern border management has shifted drastically toward biometric tracking and AI-driven automated screening.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Automated Profiling & Algorithmic Bias</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Automated AI risk scoring structures frequently introduce systemic bias, causing wrongful asylum denials.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Loss of Asylum Seeker Anonymity</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Aggressive tracking via biometric identity databases strips individuals of security and personal privacy.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Cross-Border Digital Tracking</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Inter-state surveillance tracking leaves individuals under continuous observation along entire migratory tracks.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Black-Box Border Mechanisms</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">A distinct lack of structural transparency in automated legal judgements limits legal challenge capabilities.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Anachronistic Legal Instruments</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Legacy human rights treaties fail to account for modern realities surrounding digitized digital identities.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                            <h4 class="font-semibold text-gray-900 text-sm">Criminalization of Irregular Routes</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">The rapid deployment of defensive technologies turns unregularized transit paths into criminal actions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-circle-nodes unhcr-blue-text"></i> Network of Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-building-ngo"></i> UNHCR</h4>
+                        <p class="text-xs text-gray-600">Tasked with defending global legal adherence to standard human rights guidelines across shifting landscapes.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-shield"></i> Border Control Agencies</h4>
+                        <p class="text-xs text-gray-600">State agencies executing sovereign security mandates through advanced technology deployments.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-microchip"></i> Technology Enterprises</h4>
+                        <p class="text-xs text-gray-600">Private organizations ideating, assembling, and licensing algorithmic tracking frameworks to governments.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-person-walking-dashed-line"></i> Asylum Seekers</h4>
+                        <p class="text-xs text-gray-600">Displaced individuals directly bearing the operational brunt of digital gatekeeping architectures.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-flag"></i> Transit & Host Nations</h4>
+                        <p class="text-xs text-gray-600">Geopolitical entities (e.g., EU blocks, USA, Middle Eastern nations) executing technology policies along borders.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all lg:col-span-3">
+                        <h4 class="font-bold text-blue-900 text-sm mb-1"><i class="fa-solid fa-scale-balanced"></i> Human Rights Defenders</h4>
+                        <p class="text-xs text-gray-600">Civil groups (Amnesty International, Human Rights Watch) identifying infractions and litigating against illegal technological deployment structures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-line unhcr-blue-text"></i> Resulting Consequences</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-4 bg-slate-50 rounded-xl border border-gray-100">
+                        <h4 class="font-bold text-gray-900 text-sm mb-2"><i class="fa-solid fa-ban text-red-600"></i> Legal Deficits</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Drastically reduced entry points to balanced asylum processing.</li>
+                            <li>A sharp uptick in immediate, extrajudicial pushback events.</li>
+                            <li>Gradual collapse of the foundational principle of <em>non-refoulement</em>.</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl border border-gray-100">
+                        <h4 class="font-bold text-gray-900 text-sm mb-2"><i class="fa-solid fa-eye text-purple-600"></i> Autonomy Vulnerabilities</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Widespread privacy infractions and total destruction of individual self-determination.</li>
+                            <li>Automated discrimination against marginalized demographics.</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-xl border border-gray-100 md:col-span-2 lg:col-span-1">
+                        <h4 class="font-bold text-gray-900 text-sm mb-2"><i class="fa-solid fa-network-wired text-blue-600"></i> Spatial Transformations</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Development of "invisible virtual borders" extending far behind geographical lines.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-sliders text-blue-600"></i> Feasible Technical & Legal Reform</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">01. Expand Optional Protocols</span>
+                        <p class="text-xs text-gray-600">Incorporate comprehensive digital rights frameworks into existing treaty mechanics via agile updates.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">02. Global AI Codes of Conduct</span>
+                        <p class="text-xs text-gray-600">Introduce strict international guidelines to regulate automated decision tools in migration environments.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">03. Mandatory Human-In-The-Loop</span>
+                        <p class="text-xs text-gray-600">Enforce binding mandates requiring complete human oversight before finalizing asylum processing rejections.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">04. Ban Predictive Policing</span>
+                        <p class="text-xs text-gray-600">Institute strict bans against utilizing speculative algorithmic models to pre-emptively intercept transit.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">05. Data Protection Safeguards</span>
+                        <p class="text-xs text-gray-600">Enact codified guarantees enabling asylum seekers access to managed levels of functional digital anonymity.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50/40 rounded-xl border border-blue-100">
+                        <span class="text-xs font-bold text-blue-900 block mb-1">06. Independent Tech Auditing</span>
+                        <p class="text-xs text-gray-600">Form neutral international regulatory networks to rigorously evaluate border biometric software suites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assembly Directive Banner -->
+        <section class="mt-16 unhcr-gradient text-white rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+            <div class="absolute right-0 bottom-0 translate-x-10 translate-y-10 opacity-10 text-[150px]">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div class="relative z-10 max-w-4xl">
+                <h3 class="text-lg md:text-xl font-bold unhcr-accent-text mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-compass"></i> Delegate Strategy & Committee Perspective
+                </h3>
+                <p class="text-sm text-gray-200 leading-relaxed mb-4">
+                    The modern landscape of forced displacement places the UNHCR at a critical junction between regional sovereignty and international obligation. Delegates are directed to maintain close reference to:
+                </p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm font-medium text-white mb-4">
+                    <li><i class="fa-solid fa-angle-right text-sky-400 mr-2"></i> International Refugee Law & Treaty Obligations</li>
+                    <li><i class="fa-solid fa-angle-right text-sky-400 mr-2"></i> Operational coordination under political fragility</li>
+                    <li><i class="fa-solid fa-angle-right text-sky-400 mr-2"></i> Protection of fundamental state non-refoulement</li>
+                    <li><i class="fa-solid fa-angle-right text-sky-400 mr-2"></i> Emerging threats to digital identity and privacy rights</li>
+                    <li><i class="fa-solid fa-angle-right text-sky-400 mr-2"></i> Equity of algorithmic border vetting technologies</li>
+                    <li><i class="fa-solid fa-angle-right text-sky-400 mr-2"></i> Shared international financial accountability mechanisms</li>
+                </ul>
+                <p class="text-sm text-sky-100 bg-white/10 p-3 rounded-lg border border-white/20 italic">
+                    <strong>Resolution Guidance:</strong> Resolutions must balance state border sovereignty alongside human rights guarantees. Focus on creating pragmatic tracking infrastructures, technical monitoring auditing boards, and stabilizing operational donor funding patterns.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-500 text-xs py-8 border-t border-slate-800 mt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-2">
+            <p class="font-medium text-gray-400">United Nations High Commissioner for Refugees (UNHCR) — Model United Nations Simulation</p>
+            <p>Official Structural Study Guide Repository. All Council Materials Distributed under UN Documentation Guidelines.</p>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Logic Scripts -->
+    <script>
+        function switchTopic(topicId) {
+            const topicA = document.getElementById('topic-a');
+            const topicB = document.getElementById('topic-b');
+            const btnA = document.getElementById('btn-topic-a');
+            const btnB = document.getElementById('btn-topic-b');
+
+            if (topicId === 'topic-a') {
+                topicA.classList.remove('hidden');
+                topicB.classList.add('hidden');
+                btnA.classList.add('tab-active');
+                btnB.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            } else {
+                topicB.classList.remove('hidden');
+                topicA.classList.add('hidden');
+                btnB.classList.add('tab-active');
+                btnA.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>

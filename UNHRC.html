@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guide | United Nations Human Rights Council (UNHRC)</title>
+    <!-- Tailwind CSS for modern layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* UNHRC Premium Gradient Theme (Humanitarian Deep Teal to Deep UN Blue) */
+        .unhrc-gradient {
+            background: linear-gradient(135deg, #0f4c5c 0%, #0077c8 100%);
+        }
+        .unhrc-gold-text {
+            color: #e5a93c;
+        }
+        .unhrc-gold-bg {
+            background-color: #e5a93c;
+        }
+        .unhrc-teal-text {
+            color: #0f4c5c;
+        }
+        .tab-active {
+            border-bottom: 4px solid #e5a93c;
+            color: #0f4c5c;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="unhrc-gradient text-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 py-12 text-center relative overflow-hidden">
+            <!-- Decorative Globe Background -->
+            <div class="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
+                <i class="fa-solid fa-scale-balanced text-[300px]"></i>
+            </div>
+            
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-3 bg-white/10 px-4 py-1.5 rounded-full text-sm font-medium tracking-wide mb-4 backdrop-blur-sm border border-white/10">
+                    <i class="fa-solid fa-hand-holding-heart text-amber-300"></i> Protection of Universal Human Rights & Freedoms
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2">UNITED NATIONS HUMAN RIGHTS COUNCIL</h1>
+                <p class="text-xl unhrc-gold-text font-medium tracking-wider mb-6">OFFICIAL DELEGATE BACKGROUND STUDY GUIDE</p>
+                <div class="w-24 h-1 unhrc-gold-bg mx-auto rounded-full"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Topic Sticky Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-center space-x-2 md:space-x-8">
+                <button onclick="switchTopic('topic-a')" id="btn-topic-a" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all tab-active focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-building-shield"></i> Topic A: Post-AMLO Mexico
+                </button>
+                <button onclick="switchTopic('topic-b')" id="btn-topic-b" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-cloud-sun-rain"></i> Topic B: Kafala & Climate Migration
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-10 md:px-8">
+        
+        <!-- ================= TOPIC A SECTION ================= -->
+        <div id="topic-a" class="space-y-12 transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-teal-700 uppercase block mb-2">Agenda Item I</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">The State Within the State: Cartel Sovereignty, Military Impunity, and the Collapse of Human Rights in Post–AMLO Mexico</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-file-text unhrc-teal-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">Mexico has faced decades of violence linked to organized crime, particularly powerful drug cartels that control territories, influence local governments, and challenge state authority. During and after the presidency of Andrés Manuel López Obrador (AMLO), debates intensified regarding the effectiveness of security policies, the growing role of the military in civilian affairs, and the deterioration of human rights protections. This agenda examines whether criminal organizations have effectively created "states within a state," the extent of military impunity, and the resulting consequences for governance, democracy, and human rights.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-clock-rotate-left unhrc-teal-text"></i> History and Background</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Drug cartels emerged as major criminal organizations in Mexico during the late 20th century.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The Mexican government's "War on Drugs," launched in 2006, significantly increased military involvement in internal security.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Powerful organizations such as the Sinaloa Cartel, Jalisco New Generation Cartel (CJNG), and others expanded their influence across large portions of the country.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">During AMLO's presidency (2018–2024), the government adopted the strategy of "Abrazos, no balazos" (Hugs, not Bullets), emphasizing social programs while still relying heavily on security forces.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The military gained increasing responsibilities, including infrastructure projects, customs administration, and public security through the National Guard.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Human rights organizations raised concerns about enforced disappearances, extrajudicial killings, corruption, and limited accountability.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">1. Cartel Territorial Control</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Many criminal organizations exercise de facto control over communities, transportation routes, and local economies.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">2. Weak State Authority</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Local governments often lack the capacity to challenge organized criminal groups.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">3. Military Impunity</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Allegations of excessive force, human rights violations, and limited accountability mechanisms undermine public trust.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">4. Corruption and Criminal Infiltration</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Cartels frequently infiltrate political institutions, law enforcement agencies, and judicial systems.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">5. Human Rights Violations</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Disappearances, kidnappings, torture, and violence against journalists and activists remain significant concerns.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">6. Judicial Inefficiency</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Low prosecution and conviction rates contribute to a culture of impunity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-users unhrc-teal-text"></i> Council Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-landmark"></i> Government of Mexico</h4>
+                        <p class="text-xs text-gray-600">Responsible for national security policy, law enforcement, and human rights protection.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-shield-halved"></i> Mexican Armed Forces</h4>
+                        <p class="text-xs text-gray-600">Play a central role in counter-cartel operations and public security.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-mask"></i> Cartel Organizations</h4>
+                        <p class="text-xs text-gray-600">Major non-state actors deeply influencing localized regional security and governance.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-city"></i> Local Governments</h4>
+                        <p class="text-xs text-gray-600">Often face severe direct and violent coercion from localized criminal networks.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-users-line"></i> Civil Society</h4>
+                        <p class="text-xs text-gray-600">Advocate structurally for systemic accountability, legal transparency, and fundamental rights.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-pen-nib"></i> Journalists & Advocates</h4>
+                        <p class="text-xs text-gray-600">Monitor continuous institutional abuses and expose dark corruption under immense threat matrices.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all lg:col-span-2">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-globe"></i> UN & International Community</h4>
+                        <p class="text-xs text-gray-600">Support anti-corruption frameworks, rule-of-law architectures, and targeted global human rights monitoring initiatives.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-simple unhrc-teal-text"></i> Comprehensive Multi-Sector Impacts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-gun text-red-700"></i> Security & Political</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Persistent systemic violence and geographical instability.</li>
+                            <li>Erosion of legal democratic institutions and citizen confidence.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-person-circle-exclamation text-teal-700"></i> Human Rights & Social</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Widespread forced disappearances and extrajudicial killings.</li>
+                            <li>Mass community displacement and coercive recruitment of youth.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl md:col-span-2 lg:col-span-1">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-arrow-trend-down text-amber-700"></i> Economic Footprint</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Aggressively reduced foreign direct investment and tourism.</li>
+                            <li>Exorbitant internal security overhead costs for businesses.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-lightbulb text-amber-500"></i> Feasible Solutions Framework</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">01. Strengthen Judicial Capacity</span>
+                        <p class="text-xs text-gray-600">Improve direct prosecutorial infrastructure, scale witness protection channels, and embed hard anti-corruption protocols.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">02. Security Force Oversight</span>
+                        <p class="text-xs text-gray-600">Establish completely independent civic monitoring bodies to rigorously track and investigate military abuse claims.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">03. Infiltration Cleanout</span>
+                        <p class="text-xs text-gray-600">Implement sweeping transparency metrics at all nested layers of state and federal government administrations.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">04. Empower Local Municipalities</span>
+                        <p class="text-xs text-gray-600">Funnel critical socio-economic assets and structural legal support networks to isolated vulnerable regional councils.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">05. Safeguard Human Rights Defenders</span>
+                        <p class="text-xs text-gray-600">Expand operational scope for active physical safety programs and prioritize prosecutions of targeted press crackdowns.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">06. Radical Root-Cause Interventions</span>
+                        <p class="text-xs text-gray-600">Deploy high-yield structural education, vocational employment pipelines, and local community assets to suppress cartel enlistment loops.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================= TOPIC B SECTION ================= -->
+        <div id="topic-b" class="space-y-12 hidden transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-teal-700 uppercase block mb-2">Agenda Item II</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Burned Twice: The Kafala System, Climate-Driven Displacement, and the Human Rights Vacuum at the Intersection of Labour Exploitation and the Global Climate Crisis</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-file-text unhrc-teal-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">Climate change is increasingly forcing people to leave their homes due to droughts, floods, rising sea levels, and extreme weather events. Many displaced individuals migrate abroad seeking employment opportunities, often in countries that operate under labor sponsorship systems such as the Kafala system. Critics argue that climate vulnerability and labor exploitation intersect to create a significant human rights crisis. This agenda explores the relationship between climate-driven displacement, migrant worker exploitation, and gaps in international legal protection.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-clock-rotate-left unhrc-teal-text"></i> History and Background</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The Kafala system originated in several Gulf countries as a sponsorship framework regulating migrant labor.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Under the system, workers' legal status is often linked directly to their employers.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Human rights organizations have criticized aspects of the system for enabling exploitation, wage theft, passport confiscation, and restrictions on worker mobility.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Climate change has increased displacement worldwide through floods, droughts, desertification, and extreme weather events.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Existing international refugee law does not formally recognize most climate-displaced persons as refugees.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-teal-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">As climate pressures increase, vulnerable populations may become more susceptible to exploitative labor arrangements abroad.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">1. Climate-Driven Displacement</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Millions are being displaced by environmental degradation and climate-related disasters.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">2. Legal Protection Gaps</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">International law provides limited protection for people displaced solely by climate change.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">3. Labor Exploitation</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Migrant workers may face poor working conditions, wage theft, excessive working hours, and restrictions on movement.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">4. Dependency on Employers</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">The sponsorship structure may create power imbalances between workers and employers.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">5. Lack of Access to Justice</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Many migrant workers face barriers in reporting abuse and obtaining legal remedies.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-teal-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">6. Climate Inequality</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Countries least responsible for climate change often suffer its most severe consequences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-users unhrc-teal-text"></i> Intersecting Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-person-walking-luggage"></i> Migrant Workers</h4>
+                        <p class="text-xs text-gray-600">The primary group affected by both systemic displacement and aggressive labor exploitation loops.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-cloud-bolt"></i> Displaced Populations</h4>
+                        <p class="text-xs text-gray-600">Communities systematically forced to relocate due to severe long-term environmental degradation.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-passport"></i> Host Governments</h4>
+                        <p class="text-xs text-gray-600">Responsible for regulating localized labor market operations and guarding human protections.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-money-bill-transfer"></i> Sending Countries</h4>
+                        <p class="text-xs text-gray-600">Depend on structural foreign remittances while trying to safeguard citizens abroad.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-briefcase"></i> Employers & Agencies</h4>
+                        <p class="text-xs text-gray-600">Key non-state actors operating directly within transnational structural recruitment frameworks.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-building-columns"></i> International Labour Org.</h4>
+                        <p class="text-xs text-gray-600">The ILO systematically promotes cross-border fair labor conditions and compliance criteria.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all lg:col-span-2">
+                        <h4 class="font-bold text-teal-900 text-sm mb-1"><i class="fa-solid fa-globe"></i> UN & Civil Society Networks</h4>
+                        <p class="text-xs text-gray-600">Agencies addressing migration, climate, and human rights while monitoring working conditions globally.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-simple unhrc-teal-text"></i> Intersection of Crisis Impacts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-person-harassing text-red-700"></i> Human Rights & Social</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Elevated risks of forced labor and human trafficking.</li>
+                            <li>Severe family separation and institutional marginalization.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-temperature-arrow-up text-amber-700"></i> Climate & Resource Pressures</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Exponentially scaling outward migration pressures.</li>
+                            <li>Resource competition loops within receiving municipalities.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl md:col-span-2 lg:col-span-1">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-hand-holding-dollar text-teal-700"></i> Economic & Governance</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Heavy baseline domestic dependence on volatile worker remittances.</li>
+                            <li>Rising multi-state polarization over international climate liability.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-lightbulb text-amber-500"></i> Feasible Solutions Framework</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">01. Dismantle/Reform Kafala</span>
+                        <p class="text-xs text-gray-600">Introduce modern frameworks allowing easy employer transition paths and separate legal status from specific business sponsorship.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">02. Codify Climate Status</span>
+                        <p class="text-xs text-gray-600">Develop innovative international legal tracks and protocols directly recognizing the protective rights of ecologically displaced persons.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">03. Target Labor Protections</span>
+                        <p class="text-xs text-gray-600">Enforce sweeping minimum wage architectures, strict workplace microclimate safety standards, and sharp anti-abuse laws.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">04. Audit Recruitment Entities</span>
+                        <p class="text-xs text-gray-600">Strictly track and penalize fraudulent recruitment networks while removing predatory placement tariff models entirely.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">05. Build Legal Recourse Channels</span>
+                        <p class="text-xs text-gray-600">Deploy easily reachable linguistic legal aid desks, automated anonymous dispute centers, and independent labor arbitration panels.</p>
+                    </div>
+                    <div class="p-4 bg-teal-50/40 rounded-xl border border-teal-100">
+                        <span class="text-xs font-bold text-teal-900 block mb-1">06. Scale Adaptation Capital</span>
+                        <p class="text-xs text-gray-600">Inject strategic climate finance blocks into high-risk home regions to build resilience parameters and ease forced displacement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assembly Directive Banner -->
+        <section class="mt-16 unhrc-gradient text-white rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+            <div class="absolute right-0 bottom-0 translate-x-10 translate-y-10 opacity-10 text-[150px]">
+                <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <div class="relative z-10 max-w-4xl">
+                <h3 class="text-lg md:text-xl font-bold unhrc-gold-text mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-gavel"></i> Key UNHRC Perspective Directive
+                </h3>
+                <p class="text-sm text-gray-200 leading-relaxed">
+                    Delegates must evaluate both agendas through the specific purview of the Human Rights Council mandate: focusing heavily on **state responsibility, protection of marginalized demographics, institutional accountability, rule of law, climate justice, and international legal enforcement framework synchronization.** High-caliber working papers should not merely request legislative adjustments, but propose structural multilateral initiatives—such as independent human rights verification committees, global climate-labor fund allocation frameworks, and secure cross-border legal recourse portals—while dynamically respecting state sovereignty.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-500 text-xs py-8 border-t border-slate-800 mt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-2">
+            <p class="font-medium text-gray-400">United Nations Human Rights Council — Model United Nations Simulation</p>
+            <p>Official Structural Study Guide Repository. All Council Materials Distributed under UN Documentation Guidelines.</p>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Logic Scripts -->
+    <script>
+        function switchTopic(topicId) {
+            const topicA = document.getElementById('topic-a');
+            const topicB = document.getElementById('topic-b');
+            const btnA = document.getElementById('btn-topic-a');
+            const btnB = document.getElementById('btn-topic-b');
+
+            if (topicId === 'topic-a') {
+                topicA.classList.remove('hidden');
+                topicB.classList.add('hidden');
+                btnA.classList.add('tab-active');
+                btnB.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            } else {
+                topicB.classList.remove('hidden');
+                topicA.classList.add('hidden');
+                btnB.classList.add('tab-active');
+                btnA.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>

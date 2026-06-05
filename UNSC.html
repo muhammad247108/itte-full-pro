@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guide | United Nations Security Council (UNSC)</title>
+    <!-- Tailwind CSS for modern layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        /* UNSC Gradient Theme */
+        .unsc-gradient {
+            background: linear-gradient(135deg, #0A192F 0%, #0077C8 100%);
+        }
+        .unsc-gold-text {
+            color: #D4AF37;
+        }
+        .unsc-gold-bg {
+            background-color: #D4AF37;
+        }
+        .unsc-blue-text {
+            color: #0077C8;
+        }
+        .tab-active {
+            border-bottom: 4px solid #0077C8;
+            color: #0A192F;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="unsc-gradient text-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 py-12 text-center relative overflow-hidden">
+            <!-- Decorative Emblem Background -->
+            <div class="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
+                <i class="fa-solid fa-globe text-[300px]"></i>
+            </div>
+            
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-3 bg-white/10 px-4 py-1.5 rounded-full text-sm font-medium tracking-wide mb-4 backdrop-blur-sm border border-white/10">
+                    <i class="fa-solid fa-shield-halved text-sky-400"></i> Primary Organ for Global Peace & Security
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2">UNITED NATIONS SECURITY COUNCIL</h1>
+                <p class="text-xl unsc-gold-text font-medium tracking-wider mb-6">OFFICIAL BACKGROUND STUDY GUIDE</p>
+                <div class="w-24 h-1 unsc-gold-bg mx-auto rounded-full"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Topic Sticky Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-center space-x-2 md:space-x-8">
+                <button onclick="switchTopic('topic-a')" id="btn-topic-a" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all tab-active focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-network-wired"></i> Topic A: Transnational Elite Networks
+                </button>
+                <button onclick="switchTopic('topic-b')" id="btn-topic-b" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation"></i> Topic B: Mideast Conflict & Energy
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-10 md:px-8">
+        
+        <!-- ================= TOPIC A SECTION ================= -->
+        <div id="topic-a" class="space-y-12 transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-sky-700 uppercase block mb-2">Agenda Item I</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Addressing Transnational Elite Exploitation Networks: Evaluating the Global Security Implications of the Jeffrey Epstein Case</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-circle-info unsc-blue-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">The Jeffrey Epstein case exposed an international network involving the sexual exploitation and trafficking of minors, connections with powerful individuals, financial secrecy, and alleged failures of law enforcement and judicial institutions. While the case originated in the United States, it raised global concerns regarding transnational criminal networks, human trafficking, corruption, abuse of power, and weaknesses in international cooperation. For the United Nations Security Council (UNSC), the issue extends beyond individual crimes and concerns the broader threat posed by elite exploitation networks to international security, governance, and the rule of law.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-clock-rotate-left unsc-blue-text"></i> History and Background</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">Jeffrey Epstein was an American financier accused of operating a large-scale sex trafficking network involving underage girls.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">In 2008, Epstein received a controversial plea deal that allowed him to avoid more severe federal prosecution.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">In 2019, he was arrested on federal sex trafficking charges.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">Epstein died in prison while awaiting trial, officially ruled a suicide, though the circumstances generated widespread public scrutiny.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">Investigations revealed connections with numerous influential figures from politics, business, academia, and entertainment.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">The case highlighted how wealth, influence, offshore financial structures, and international connections can potentially obstruct accountability.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">It also exposed weaknesses in international cooperation against human trafficking and exploitation networks.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-circle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">1. Human Trafficking and Sexual Exploitation</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">The case demonstrated how organized networks can facilitate the exploitation and trafficking of vulnerable individuals across jurisdictions.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">2. Abuse of Wealth and Influence</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Powerful individuals may use financial resources and political influence to evade investigation or prosecution.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">3. Weak International Cooperation</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Differences in legal systems and limited information sharing hinder effective investigations of transnational crimes.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">4. Financial Secrecy and Offshore Networks</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Offshore accounts, shell companies, and financial secrecy mechanisms can conceal criminal activities.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">5. Lack of Victim Protection</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Victims often face intimidation, social stigma, and barriers to obtaining justice.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">6. Erosion of Public Trust</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Perceived unequal application of justice undermines confidence in governments and legal institutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-users unsc-blue-text"></i> Primary Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-shield"></i> UNSC</h4>
+                        <p class="text-xs text-gray-600">Responsible for addressing threats to international peace, security, and transnational criminal activities.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-landmark"></i> National Governments</h4>
+                        <p class="text-xs text-gray-600">Investigate crimes, prosecute offenders, and strengthen domestic anti-trafficking legislation.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-building-shield"></i> Law Enforcement</h4>
+                        <p class="text-xs text-gray-600">Coordinate tactical investigations across sovereign national borders.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-user-shield"></i> Victims & Survivors</h4>
+                        <p class="text-xs text-gray-600">Require robust justice frameworks, holistic protection, rehabilitation, and fiscal compensation.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-piggy-bank"></i> Financial Institutions</h4>
+                        <p class="text-xs text-gray-600">Play a critical role in detecting suspicious transactions and preventing laundering.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-globe"></i> Int. Organizations</h4>
+                        <p class="text-xs text-gray-600">Bodies such as the UN and Interpol that assist in operational international cooperation.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all lg:col-span-2">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-handshake"></i> Civil Society Organizations</h4>
+                        <p class="text-xs text-gray-600">Advocate extensively for victims' baseline human rights and closely monitor national government accountability metrics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-pie unsc-blue-text"></i> Systemic Impacts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-1 bg-slate-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-mask text-red-700"></i> Security Impacts</h4>
+                        <p class="text-xs text-gray-600">Strengthens modern transnational criminal network resilience. Creates severe vulnerabilities for corruption and high-level institutional compromise.</p>
+                    </div>
+                    <div class="space-y-1 bg-slate-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-scale-unbalanced text-blue-700"></i> Political Impacts</h4>
+                        <p class="text-xs text-gray-600">Reduces citizen confidence in baseline legislative structures and sovereign judicial systems while generating systemic concerns regarding elite immunity.</p>
+                    </div>
+                    <div class="space-y-1 bg-slate-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-house-medical-crack text-emerald-700"></i> Social Impacts</h4>
+                        <p class="text-xs text-gray-600">Inflicts deep, long-term trauma on affected victims and generates widespread public anxiety regarding systemic tracking and modern structural child exploitation loops.</p>
+                    </div>
+                    <div class="space-y-1 bg-slate-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-money-bill-trend-up text-amber-700"></i> Economic Impacts</h4>
+                        <p class="text-xs text-gray-600">Drains massive funds into cross-border trials. Compounding financial dark networks can silently warp or destabilize legitimate state economic ecosystems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-lightbulb text-amber-500"></i> Resolution Framework (Feasible Solutions)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-sky-50/50 rounded-xl border border-sky-100">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">01. Counter-Trafficking Cooperation</span>
+                        <p class="text-xs text-gray-600">Increase structural intelligence sharing metrics and implement automated joint cross-border enforcement exercises between UN member states.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border border-sky-100">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">02. Financial Transparency Overhaul</span>
+                        <p class="text-xs text-gray-600">Mandate strict global oversight of offshore banking accounts, nested shell corporate architectures, and anonymous trust registrations.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border border-sky-100">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">03. International Victim Backing</span>
+                        <p class="text-xs text-gray-600">Establish cross-border support tracking initiatives ensuring psychological asylum protection and unified rehabilitation funding channels.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border border-sky-100">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">04. Universal Accountability Rules</span>
+                        <p class="text-xs text-gray-600">Reinforce sovereign mechanisms ensuring targeted legal actions execute evenly without giving special weight to elite political or financial leverage.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border border-sky-100">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">05. Expand Unified Data Networks</span>
+                        <p class="text-xs text-gray-600">Form secure cryptographic tracking networks managed under international mandates to monitor cross-border crime coordinates live.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border border-sky-100">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">06. Promote Judicial Agreements</span>
+                        <p class="text-xs text-gray-600">Strengthen multi-lateral extradition treaties and standard mutual legal assistance setups to remove legal safe havens for network operators.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================= TOPIC B SECTION ================= -->
+        <div id="topic-b" class="space-y-12 hidden transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-sky-700 uppercase block mb-2">Agenda Item II</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Addressing the Escalation of Direct Hostilities Involving Iran, Israel, and Allied Forces and Its Implications for International Peace and Energy Security</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-circle-info unsc-blue-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">The conflict involving Iran, Israel, and their respective allies represents one of the most significant threats to international peace and security in the modern era. Direct military confrontations, missile exchanges, proxy warfare, cyber operations, and regional instability have increased tensions throughout the Middle East. Given the region's central role in global energy production and maritime trade, escalation could have severe consequences for international security, economic stability, and energy markets.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-clock-rotate-left unsc-blue-text"></i> History and Background</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">Iran and Israel have maintained hostile relations since the Iranian Revolution of 1979.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">Both states have accused each other of supporting destabilizing activities across the Middle East.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">The conflict has traditionally occurred through proxy groups and indirect confrontation.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">Tensions increased through disputes over Iran's nuclear program.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">Numerous incidents involving missile attacks, drone strikes, and targeted military operations have heightened regional instability.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">Regional actors including the United States, Gulf States, Hezbollah, and various armed groups have become involved directly or indirectly.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-notch text-sky-600 mt-1.5 shrink-0 text-xs"></i> <span class="text-gray-600">Strategic waterways such as the Strait of Hormuz remain vulnerable to disruption during periods of heightened conflict.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-circle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">1. Risk of Regional War</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Direct confrontation could expand into a wider Middle Eastern conflict involving multiple states.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">2. Nuclear Proliferation Concerns</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Escalation may increase pressure for nuclear weapons development and proliferation.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">3. Threats to Energy Security</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Disruptions to oil and gas exports could destabilize global energy markets.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">4. Humanitarian Consequences</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Civilian casualties, displacement, and infrastructure destruction may increase significantly.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">5. Maritime Security Risks</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Attacks on shipping routes could threaten global trade and energy supplies.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-semibold text-gray-900 text-sm">6. Proxy Warfare</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Armed groups and militias may intensify hostilities across multiple countries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-users unsc-blue-text"></i> Primary Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-landmark-flag"></i> Iran</h4>
+                        <p class="text-xs text-gray-600">A central party whose regional influence and security concerns significantly affect the conflict footprint.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-gavel"></i> Israel</h4>
+                        <p class="text-xs text-gray-600">Directly involved in military, intelligence, and diplomatic dimensions of the crisis.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-flag-usa"></i> United States</h4>
+                        <p class="text-xs text-gray-600">A major security partner of Israel and an influential actor in overall regional stabilization efforts.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-building-columns"></i> GCC States</h4>
+                        <p class="text-xs text-gray-600">Deeply concerned about structural regional security, maritime energy exports, and localized market insulation.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-shield"></i> UNSC</h4>
+                        <p class="text-xs text-gray-600">Charter-mandated primary actor responsible for repairing and keeping international peace metrics active.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-oil-well"></i> Energy Importers</h4>
+                        <p class="text-xs text-gray-600">Sovereign global nations thoroughly dependent on uninterrupted Middle Eastern raw hydrocarbon flows.</p>
+                    </div>
+                    <div class="p-4 border border-gray-150 rounded-xl bg-slate-50 hover:bg-white hover:shadow-md transition-all lg:col-span-2">
+                        <h4 class="font-bold text-sky-900 text-sm mb-1"><i class="fa-solid fa-ship"></i> Shipping & Civil Populations</h4>
+                        <p class="text-xs text-gray-600">Commercial supply lines navigating transit locks and local civilians absorbing the direct impacts of theater military actions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-pie unsc-blue-text"></i> Systemic Impacts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-1 bg-slate-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-jet-fighter text-red-700"></i> Security & Political Impact</h4>
+                        <p class="text-xs text-gray-600">Elevated threat paths toward a fully-scaled inter-state Middle Eastern war. Increases proxy group activation, polarizes major global power alignment vectors, and severely tests existing global communication hotlines.</p>
+                    </div>
+                    <div class="space-y-1 bg-slate-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-gas-pump text-blue-700"></i> Energy & Economic Impact</h4>
+                        <p class="text-xs text-gray-600">Generates structural price shocks across global oil and liquid gas indicators. Disruptions within the critical Strait of Hormuz channel instantly degrade worldwide infrastructure investment security metrics.</p>
+                    </div>
+                    <div class="space-y-1 bg-slate-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-users-line text-emerald-700"></i> Humanitarian Impact</h4>
+                        <p class="text-xs text-gray-600">Triggers large-scale civilian population displacement and multi-state refugee trends. Causes compounding damage to domestic water, electrical, and medical distribution facilities across towns.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-lightbulb text-amber-500"></i> Resolution Framework (Feasible Solutions)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-sky-50/50 rounded-xl border-sky-100 border">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">01. Immediate Term Ceasefire</span>
+                        <p class="text-xs text-gray-600">Incorporate binding UN observation structures to monitor and freeze offensive kinetic movements across targeted operational perimeters.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border-sky-100 border">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">02. UNSC Mandated Dialogues</span>
+                        <p class="text-xs text-gray-600">Establish dedicated direct negotiation tracks inside neutral territories overseen directly by the Secretary-General's office.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border-sky-100 border">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">03. Safeguard Energy Hubs</span>
+                        <p class="text-xs text-gray-600">Deploy international multi-lateral tracking components to guarantee local energy generation networks retain demilitarized protection status.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border-sky-100 border">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">04. Maritime Freedom Controls</span>
+                        <p class="text-xs text-gray-600">Create global blue-water escort coordination networks to preserve unhindered civilian merchant movement through vital international straits.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border-sky-100 border">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">05. Trust-Building Safeguards</span>
+                        <p class="text-xs text-gray-600">Set up shared inter-military data links and secure cross-border hotlines to prevent accidental escalation loops from radar misinterpretations.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border-sky-100 border">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">06. Aid Delivery Integration</span>
+                        <p class="text-xs text-gray-600">Form protected humanitarian transport lanes backed by Security Council resolutions to safely deploy medical support blocks directly to theater zones.</p>
+                    </div>
+                    <div class="p-4 bg-sky-50/50 rounded-xl border-sky-100 border lg:col-span-3">
+                        <span class="text-xs font-bold text-sky-900 block mb-1">07. Nuclear Non-Proliferation Initiatives</span>
+                        <p class="text-xs text-gray-600">Revitalize and support structured multi-lateral diplomatic efforts to prevent nuclear weapon weaponization and encourage regional arms control caps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assembly Directive Banner -->
+        <section class="mt-16 unsc-gradient text-white rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+            <div class="absolute right-0 bottom-0 translate-x-10 translate-y-10 opacity-10 text-[150px]">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div class="relative z-10 max-w-4xl">
+                <h3 class="text-lg md:text-xl font-bold unsc-gold-text mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-gavel"></i> Key Security Council Mandate Perspective
+                </h3>
+                <p class="text-sm text-gray-200 leading-relaxed">
+                    For both agendas, delegates must strictly center arguments around the UNSC's primary mandate under the UN Charter: <strong>Maintaining international peace and security, preventing armed conflict, shielding civilian populations, and countering transnational systemic crimes.</strong> When drafting resolutions, focus your work on actionable UNSC powers—such as asset freezes, smart sanctions, targeted oversight committees, monitoring missions, dynamic peacebuilding protocols, and mutual legal intelligence frameworks—rather than attempting to reform the internal domestic legislation of individual sovereign states.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-500 text-xs py-8 border-t border-gray-900 mt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-2">
+            <p class="font-medium text-gray-400">United Nations Security Council — Model United Nations Simulation Architecture</p>
+            <p>Official Delegate Resource Database. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Logic Scripts -->
+    <script>
+        function switchTopic(topicId) {
+            const topicA = document.getElementById('topic-a');
+            const topicB = document.getElementById('topic-b');
+            const btnA = document.getElementById('btn-topic-a');
+            const btnB = document.getElementById('btn-topic-b');
+
+            if (topicId === 'topic-a') {
+                topicA.classList.remove('hidden');
+                topicB.classList.add('hidden');
+                btnA.classList.add('tab-active');
+                btnB.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            } else {
+                topicB.classList.remove('hidden');
+                topicA.classList.add('hidden');
+                btnB.classList.add('tab-active');
+                btnA.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>

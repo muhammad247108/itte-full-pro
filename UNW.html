@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guide | United Nations Commission on the Status of Women (UNCSW)</title>
+    <!-- Tailwind CSS for modern layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* UNCSW Premium Gradient Theme (Deep Violet to UN Blue) */
+        .uncsw-gradient {
+            background: linear-gradient(135deg, #4c1d95 0%, #0077c8 100%);
+        }
+        .uncsw-gold-text {
+            color: #e5a93c;
+        }
+        .uncsw-gold-bg {
+            background-color: #e5a93c;
+        }
+        .uncsw-violet-text {
+            color: #4c1d95;
+        }
+        .tab-active {
+            border-bottom: 4px solid #e5a93c;
+            color: #4c1d95;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="uncsw-gradient text-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 py-12 text-center relative overflow-hidden">
+            <!-- Decorative Background -->
+            <div class="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+                <i class="fa-solid fa-venus text-[300px]"></i>
+            </div>
+            
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-3 bg-white/10 px-4 py-1.5 rounded-full text-sm font-medium tracking-wide mb-4 backdrop-blur-sm border border-white/10">
+                    <i class="fa-solid fa-dove text-amber-300"></i> Global Champion for Gender Equality
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2">COMMISSION ON THE STATUS OF WOMEN</h1>
+                <p class="text-xl uncsw-gold-text font-medium tracking-wider mb-6">OFFICIAL DELEGATE BACKGROUND STUDY GUIDE</p>
+                <div class="w-24 h-1 uncsw-gold-bg mx-auto rounded-full"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Topic Sticky Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-center space-x-2 md:space-x-8">
+                <button onclick="switchTopic('topic-a')" id="btn-topic-a" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all tab-active focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-hand-fist"></i> Topic A: Decolonisation & UNSCR 1325
+                </button>
+                <button onclick="switchTopic('topic-b')" id="btn-topic-b" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-file-contract"></i> Topic B: Redrafting CEDAW and CRC
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-10 md:px-8">
+        
+        <!-- ================= TOPIC A SECTION ================= -->
+        <div id="topic-a" class="space-y-12 transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-violet-700 uppercase block mb-2">Agenda Item I</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Selective Solidarity: Western Feminist Complicity, Reproductive Violence in Gaza, the Decolonisation of the Women's Rights Movement, and the Failure to Implement UN Security Council Resolution 1325</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-file-text uncsw-violet-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">The global women's rights movement has historically advocated for gender equality, reproductive rights, and protection from violence. However, recent conflicts, particularly in Gaza, have sparked debates regarding the consistency of international feminist advocacy. Critics argue that some Western feminist organizations have been selective in their responses to violence against women, especially in conflict zones involving geopolitical interests. This agenda examines allegations of reproductive violence in Gaza, the implementation failures of UN Security Council Resolution 1325, and broader calls to decolonize international feminist movements.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-clock-rotate-left uncsw-violet-text"></i> History and Background</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-violet-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">In 2000, the United Nations adopted <strong>UN Security Council Resolution 1325 (UNSCR 1325)</strong> on Women, Peace, and Security.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-violet-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The resolution recognized the disproportionate impact of armed conflict on women and called for their inclusion in peacebuilding and conflict resolution.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-violet-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Numerous conflicts worldwide have demonstrated that women and girls often face gender-based violence, displacement, and restricted access to healthcare.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-violet-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The Palestinian-Israeli conflict has generated ongoing concerns regarding women's rights, reproductive healthcare, and civilian protection.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-violet-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Critics argue that international feminist movements have not always responded consistently to violations affecting women in non-Western regions.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-circle-check text-violet-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The concept of decolonizing feminism emerged from concerns that global feminist discourse often prioritizes Western perspectives while marginalizing voices from the Global South.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">1. Inadequate Implementation of UNSCR 1325</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Many states have failed to fully implement commitments regarding women's participation in peace and security processes.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">2. Reproductive Violence in Conflict Zones</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Women in conflict areas often face restricted access to maternal healthcare, reproductive services, and essential medical supplies.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">3. Selective Advocacy</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Perceived inconsistency in international responses to women's suffering undermines the credibility of global human rights movements.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">4. Exclusion of Local Voices</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Women from conflict-affected regions are often underrepresented in international policymaking and advocacy platforms.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">5. Gender-Based Violence During Armed Conflict</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Conflict environments increase risks of sexual violence, exploitation, and abuse.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">6. Humanitarian Access Restrictions</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Limited access to healthcare, food, water, and shelter disproportionately affects women and children.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-users uncsw-violet-text"></i> Council Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-landmark-flag"></i> UN Security Council</h4>
+                        <p class="text-xs text-gray-600">Responsible for overseeing the Women, Peace, and Security agenda and promoting UNSCR 1325 implementation.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-person-dress-burst"></i> Women in Conflict Zones</h4>
+                        <p class="text-xs text-gray-600">Directly affected by armed conflict, displacement, and acute humanitarian crises.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-gavel"></i> Governments in Conflict</h4>
+                        <p class="text-xs text-gray-600">Responsible for ensuring compliance with international humanitarian and human rights law.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-bullhorn"></i> Feminist Organizations</h4>
+                        <p class="text-xs text-gray-600">Advocate for gender equality and women's rights globally, though subject to criticism regarding selective advocacy.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-hand-holding-medical"></i> Humanitarian Orgs</h4>
+                        <p class="text-xs text-gray-600">Provide critical frontline healthcare, protection mechanisms, and emergency assistance.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-users-viewfinder"></i> Civil Society Groups</h4>
+                        <p class="text-xs text-gray-600">Represent local communities and advocate directly for affected populations on the ground.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all lg:col-span-2">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-globe"></i> International Community</h4>
+                        <p class="text-xs text-gray-600">Provides essential diplomatic frameworks, financial resources, and humanitarian support networks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-simple uncsw-violet-text"></i> Multidimensional Impacts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-gray-100">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-briefcase-medical text-red-700"></i> Humanitarian</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Increased maternal health risks.</li>
+                            <li>Limited access to reproductive healthcare.</li>
+                            <li>Higher levels of displacement and vulnerability.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-gray-100">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-people-roof text-amber-700"></i> Social</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Long-term trauma among women and families.</li>
+                            <li>Disruption of education and community structures.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-gray-100">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-landmark-dome text-violet-700"></i> Political</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Reduced trust in international institutions.</li>
+                            <li>Growing debates regarding representation within global feminist movements.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl border border-gray-100">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-shield-halved text-blue-700"></i> Security</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Exclusion of women from peace processes may reduce the effectiveness of conflict resolution efforts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-lightbulb text-amber-500"></i> Feasible Solutions Framework</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">01. Strengthen UNSCR 1325</span>
+                        <p class="text-xs text-gray-600">Require states to submit regular, rigorous reports on their Women, Peace, and Security commitments.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">02. Ensure Humanitarian Access</span>
+                        <p class="text-xs text-gray-600">Facilitate safe and uninterrupted delivery of essential healthcare, reproductive services, and humanitarian assistance.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">03. Increase Women's Participation</span>
+                        <p class="text-xs text-gray-600">Promote meaningful, direct participation of women in active peace negotiations and post-conflict reconstruction.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">04. Support Local Organizations</span>
+                        <p class="text-xs text-gray-600">Provide direct funding, operational resources, and institutional support to grassroots women's organizations.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">05. Independent Monitoring</span>
+                        <p class="text-xs text-gray-600">Establish mechanisms to independently monitor compliance with international humanitarian and human rights obligations.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">06. Inclusive Feminist Dialogue</span>
+                        <p class="text-xs text-gray-600">Encourage greater, formalized representation of women from conflict-affected and developing regions in international forums.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================= TOPIC B SECTION ================= -->
+        <div id="topic-b" class="space-y-12 hidden transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-violet-700 uppercase block mb-2">Agenda Item II</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Wonderwomen or Warning Sign: Redrafting CEDAW and the CRC</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-file-text uncsw-violet-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">The Convention on the Elimination of All Forms of Discrimination Against Women (CEDAW) and the Convention on the Rights of the Child (CRC) are among the most influential international human rights treaties. While they have significantly advanced protections for women and children, changing social, technological, economic, and geopolitical realities have led to calls for reform. This agenda examines whether aspects of these treaties require updating to address contemporary challenges while preserving their core principles.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-book-open uncsw-violet-text"></i> History and Background</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- CEDAW -->
+                        <div>
+                            <h4 class="font-bold text-violet-900 mb-2 border-l-2 border-violet-500 pl-2">CEDAW</h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-3"><i class="fa-solid fa-caret-right text-violet-400 mt-1 shrink-0 text-sm"></i> <span class="text-gray-600 text-sm">Adopted by the United Nations General Assembly in 1979.</span></li>
+                                <li class="flex gap-3"><i class="fa-solid fa-caret-right text-violet-400 mt-1 shrink-0 text-sm"></i> <span class="text-gray-600 text-sm">Often referred to as the "international bill of rights for women."</span></li>
+                                <li class="flex gap-3"><i class="fa-solid fa-caret-right text-violet-400 mt-1 shrink-0 text-sm"></i> <span class="text-gray-600 text-sm">Seeks to eliminate discrimination against women in political, economic, social, and cultural spheres.</span></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- CRC -->
+                        <div>
+                            <h4 class="font-bold text-blue-800 mb-2 border-l-2 border-blue-500 pl-2">CRC</h4>
+                            <ul class="space-y-2">
+                                <li class="flex gap-3"><i class="fa-solid fa-caret-right text-blue-400 mt-1 shrink-0 text-sm"></i> <span class="text-gray-600 text-sm">Adopted in 1989.</span></li>
+                                <li class="flex gap-3"><i class="fa-solid fa-caret-right text-blue-400 mt-1 shrink-0 text-sm"></i> <span class="text-gray-600 text-sm">Establishes comprehensive rights for children, including protection, development, participation, and survival rights.</span></li>
+                                <li class="flex gap-3"><i class="fa-solid fa-caret-right text-blue-400 mt-1 shrink-0 text-sm"></i> <span class="text-gray-600 text-sm">One of the most widely ratified international treaties.</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Emerging Challenges -->
+                        <div class="bg-amber-50 p-4 rounded-xl border border-amber-100">
+                            <h4 class="font-bold text-amber-900 mb-2"><i class="fa-solid fa-bolt text-amber-500"></i> Emerging Modern Challenges</h4>
+                            <ul class="list-disc list-inside text-xs text-gray-700 space-y-1">
+                                <li>Digital technologies and online exploitation.</li>
+                                <li>Artificial intelligence and data privacy concerns.</li>
+                                <li>New forms of gender discrimination.</li>
+                                <li>Climate change and displacement.</li>
+                                <li>Evolving family structures and social norms.</li>
+                            </ul>
+                            <p class="text-xs text-gray-600 mt-2 italic">These developments have prompted discussions regarding whether existing treaty frameworks adequately address modern realities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">1. Outdated Provisions</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Certain treaty provisions were drafted before the emergence of modern technological and social challenges.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">2. Inconsistent Implementation</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Many countries have ratified the treaties but have not fully implemented their obligations.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">3. Digital Threats</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Children and women face cyberbullying, online exploitation, trafficking, and privacy violations.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">4. Enforcement Gaps</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">International treaties often lack strong, actionable enforcement mechanisms.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">5. Cultural and Political Disagreements</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">States may fundamentally disagree on contemporary interpretations of rights and obligations.</p>
+                        </div>
+                        <div class="p-3.5 bg-slate-50 rounded-xl border-l-4 border-violet-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">6. Emerging Humanitarian Challenges</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Climate-induced displacement and prolonged conflicts create totally new vulnerabilities for women and children.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-network-wired uncsw-violet-text"></i> Intersecting Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-building-flag"></i> United Nations</h4>
+                        <p class="text-xs text-gray-600">Responsible for monitoring treaty implementation and facilitating necessary institutional reforms.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-map-location-dot"></i> Member States</h4>
+                        <p class="text-xs text-gray-600">Sovereign signatories legally responsible for executing and implementing treaty obligations domestically.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-venus"></i> Women & Girls</h4>
+                        <p class="text-xs text-gray-600">The primary core beneficiaries of the protections laid out under CEDAW.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-child"></i> Children & Youth</h4>
+                        <p class="text-xs text-gray-600">The primary demographic beneficiaries of the protections instituted under the CRC.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-scale-balanced"></i> Human Rights Orgs</h4>
+                        <p class="text-xs text-gray-600">Advocate fiercely for stronger treaty interpretations, robust protections, and strict implementation.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-solid fa-graduation-cap"></i> Educational Institutions</h4>
+                        <p class="text-xs text-gray-600">Play an essential role in promoting grassroots awareness, civic literacy, and protecting rights.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/70 hover:shadow-sm transition-all lg:col-span-2">
+                        <h4 class="font-bold text-violet-900 text-sm mb-1"><i class="fa-brands fa-hubspot"></i> Technology Companies</h4>
+                        <p class="text-xs text-gray-600">Increasingly powerful non-state actors deeply influential regarding online safety, algorithm bias, data privacy, and modern digital rights.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-pie uncsw-violet-text"></i> Intersectional Impacts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-users text-violet-700"></i> Social</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Greater protection of vulnerable populations.</li>
+                            <li>Improved access to education and healthcare.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-landmark text-amber-700"></i> Political</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Enhanced international cooperation on human rights.</li>
+                            <li>Potential disagreements over treaty reform semantics.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-chart-line text-green-700"></i> Economic</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Improved participation of women and children in economic development.</li>
+                            <li>Increased investment in social welfare systems.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2 p-4 bg-slate-50 rounded-xl">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-microchip text-blue-700"></i> Technological</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Better safeguards against online abuse and exploitation.</li>
+                            <li>Stronger, codified digital rights protections.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-lightbulb text-amber-500"></i> Reform & Protocol Solutions</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">01. Draft Optional Protocols</span>
+                        <p class="text-xs text-gray-600">Update protections through additional, agile protocols addressing modern challenges rather than fully replacing legacy treaties.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">02. Strengthen Monitoring</span>
+                        <p class="text-xs text-gray-600">Improve state reporting requirements, compliance reviews, and data transparency mandates.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">03. Address Digital Rights</span>
+                        <p class="text-xs text-gray-600">Include modern provisions concerning cybersecurity, algorithmic bias, online exploitation, privacy, and AI-related risks.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">04. Displaced Populations</span>
+                        <p class="text-xs text-gray-600">Enhance specific legal protections for refugees, internally displaced persons (IDPs), and climate-induced migrants.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">05. International Cooperation</span>
+                        <p class="text-xs text-gray-600">Encourage rapid information sharing, mutual legal assistance, and best-practice exchanges among member states.</p>
+                    </div>
+                    <div class="p-4 bg-violet-50/40 rounded-xl border border-violet-100">
+                        <span class="text-xs font-bold text-violet-900 block mb-1">06. Education & Participation</span>
+                        <p class="text-xs text-gray-600">Increase public awareness programs and ensure that affected groups (youth and women) participate directly in treaty reform discourse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assembly Directive Banner -->
+        <section class="mt-16 uncsw-gradient text-white rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+            <div class="absolute right-0 bottom-0 translate-x-10 translate-y-10 opacity-10 text-[150px]">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="relative z-10 max-w-4xl">
+                <h3 class="text-lg md:text-xl font-bold uncsw-gold-text mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-bullseye"></i> Key Committee Perspective
+                </h3>
+                <p class="text-sm text-gray-200 leading-relaxed mb-4">
+                    These topics are highly normative and politically sensitive. Delegates must carefully navigate diplomatic fault lines while advocating for universal protections. Focus heavily on:
+                </p>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm font-medium text-white mb-4">
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> International human rights law</li>
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Gender equality & women's participation</li>
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Protection of civilians during conflict</li>
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Treaty implementation & strategic reform</li>
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Humanitarian access & accountability</li>
+                    <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Multilateral cross-border cooperation</li>
+                </ul>
+                <p class="text-sm text-amber-100 bg-white/10 p-3 rounded-lg border border-white/20 italic">
+                    <strong>Resolution Mandate:</strong> Successful resolutions should balance robust human rights protections, state sovereignty, practical implementation mechanisms, and international cooperation while remaining strictly consistent with existing UN frameworks.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-500 text-xs py-8 border-t border-slate-800 mt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-2">
+            <p class="font-medium text-gray-400">United Nations Commission on the Status of Women (UNCSW) — Model United Nations Simulation</p>
+            <p>Official Structural Study Guide Repository. All Council Materials Distributed under UN Documentation Guidelines.</p>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Logic Scripts -->
+    <script>
+        function switchTopic(topicId) {
+            const topicA = document.getElementById('topic-a');
+            const topicB = document.getElementById('topic-b');
+            const btnA = document.getElementById('btn-topic-a');
+            const btnB = document.getElementById('btn-topic-b');
+
+            if (topicId === 'topic-a') {
+                topicA.classList.remove('hidden');
+                topicB.classList.add('hidden');
+                btnA.classList.add('tab-active');
+                btnB.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            } else {
+                topicB.classList.remove('hidden');
+                topicA.classList.add('hidden');
+                btnB.classList.add('tab-active');
+                btnA.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>

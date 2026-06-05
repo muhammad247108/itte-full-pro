@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guide | Pakistan National Assembly - MUN</title>
+    <!-- Tailwind CSS for modern layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* Custom Pakistan National Assembly Gradient Theme */
+        .na-gradient {
+            background: linear-gradient(135deg, #00421B 0%, #00250F 100%);
+        }
+        .na-gold-text {
+            color: #C5A059;
+        }
+        .na-gold-bg {
+            background-color: #C5A059;
+        }
+        .na-green-text {
+            color: #00421B;
+        }
+        .tab-active {
+            border-bottom: 4px solid #C5A059;
+            color: #00421B;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="na-gradient text-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 py-12 text-center relative overflow-hidden">
+            <!-- Decorative Emblem Placeholder Background -->
+            <div class="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
+                <i class="fa-solid fa-building-columns text-[300px]"></i>
+            </div>
+            
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-3 bg-white/10 px-4 py-1.5 rounded-full text-sm font-medium tracking-wide mb-4 backdrop-blur-sm border border-white/10">
+                    <i class="fa-solid fa-star text-amber-400"></i> Model United Nations Conference
+                </div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2">PAKISTAN NATIONAL ASSEMBLY</h1>
+                <p class="text-xl na-gold-text font-medium tracking-wider mb-6">OFFICIAL STUDY GUIDE</p>
+                <div class="w-24 h-1 na-gold-bg mx-auto rounded-full"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Topic Sticky Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-center space-x-2 md:space-x-8">
+                <button onclick="switchTopic('topic-a')" id="btn-topic-a" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all tab-active focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved"></i> Topic A: Military Oversight
+                </button>
+                <button onclick="switchTopic('topic-b')" id="btn-topic-b" class="py-4 px-3 md:px-6 text-sm md:text-base font-semibold text-gray-500 hover:text-gray-900 transition-all focus:outline-none flex items-center gap-2">
+                    <i class="fa-solid fa-gas-pump"></i> Topic B: Petroleum Stabilization
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-10 md:px-8">
+        
+        <!-- ================= TOPIC A SECTION ================= -->
+        <div id="topic-a" class="space-y-12 transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-emerald-700 uppercase block mb-2">Agenda Item I</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Legislating Oversight of Military Operations and Resource Allocation During the Pakistan–Afghanistan Conflict</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-circle-info na-green-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">The Pakistan–Afghanistan conflict refers to the security, political, and military challenges along the Pakistan-Afghanistan border, particularly concerning terrorism, cross-border militancy, refugee movements, and border management. As Pakistan conducts military and counterterrorism operations to safeguard national security, questions arise regarding parliamentary oversight, accountability, transparency, and the effective allocation of public resources. The National Assembly plays a crucial role in ensuring that military expenditures and operations remain aligned with constitutional principles and national interests.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-timeline na-green-text"></i> History & Background</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Pakistan and Afghanistan have shared a complex relationship since Pakistan's independence in 1947.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The dispute over the <strong>Durand Line</strong> has remained a source of tension between the two countries.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Following the Soviet invasion of Afghanistan in 1979, millions of Afghan refugees entered Pakistan.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">After the events of <strong>9/11</strong>, Pakistan became a frontline state in the global War on Terror.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Militant groups such as the <strong>Tehrik-i-Taliban Pakistan (TTP)</strong> used Afghan territory to launch attacks within Pakistan.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The Taliban's return to power in Afghanistan in 2021 significantly altered regional security dynamics.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Pakistan has increased border fencing, military deployments, and counterterrorism operations to address security threats.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Increased military operations have resulted in growing defense expenditures, creating a need for stronger parliamentary oversight.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">1. Limited Parliamentary Oversight</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Military operations are often conducted with minimal direct scrutiny by elected representatives, raising concerns regarding transparency and accountability.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">2. Resource Allocation Challenges</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Large defense expenditures may reduce funds available for education, healthcare, infrastructure, and social welfare programs.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">3. Border Security Threats</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Cross-border terrorism, militant infiltration, and smuggling continue to threaten national security.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">4. Civilian Impact</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Military operations may affect civilians living in border regions through displacement, economic disruption, and security concerns.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">5. Intelligence and Secrecy Concerns</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">While oversight is necessary, excessive disclosure of military information could compromise operational effectiveness and national security.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">6. Refugee Management</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Pakistan hosts millions of Afghan refugees, creating economic, social, and security challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-users-rectangle na-green-text"></i> Committee Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-gavel"></i> Government of Pakistan</h4>
+                        <p class="text-xs text-gray-600">Responsible for national security policy, budgeting, and diplomatic engagement with Afghanistan.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-jet-fighter"></i> Pakistan Armed Forces</h4>
+                        <p class="text-xs text-gray-600">Conduct military and counterterrorism operations and manage border security.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-building-columns"></i> National Assembly</h4>
+                        <p class="text-xs text-gray-600">Provides legislative oversight, approves budgets, and ensures accountability.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-house-chimney-crack"></i> Border Communities</h4>
+                        <p class="text-xs text-gray-600">Residents of KPK and Balochistan directly affected by security developments.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-flag"></i> Afghan Administration</h4>
+                        <p class="text-xs text-gray-600">A key actor in cross-border cooperation and regional stability.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-person-walking-luggage"></i> Afghan Refugees</h4>
+                        <p class="text-xs text-gray-600">Affected by border policies, repatriation efforts, and security measures.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all lg:col-span-2">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-globe"></i> International Organizations</h4>
+                        <p class="text-xs text-gray-600">Organizations such as the United Nations monitor refugee issues, humanitarian concerns, and regional stability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-line na-green-text"></i> Analysis of Impacts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <h4 class="font-semibold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-coins text-emerald-600"></i> Economic Impacts</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Increased defense spending places pressure on the national budget.</li>
+                            <li>Border closures reduce bilateral trade and economic activity.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-semibold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-handshake-angle text-emerald-600"></i> Social Impacts</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Population displacement and humanitarian concerns in conflict areas.</li>
+                            <li>Increased insecurity affects education and healthcare access.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-semibold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-landmark text-emerald-600"></i> Political Impacts</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Debates regarding civil-military relations and democratic accountability.</li>
+                            <li>Greater demand for transparency in national security decisions.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-semibold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-mask-ventilator text-emerald-600"></i> Security Impacts</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Successful operations can reduce terrorist threats.</li>
+                            <li>Poorly coordinated policies may increase regional tensions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-lightbulb text-amber-500"></i> Feasible Solutions (Framework for Resolutions)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">01. Parliamentary Oversight</span>
+                        <p class="text-xs text-gray-600">Establish regular classified briefings to parliamentary defense committees regarding military operations and expenditures.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">02. Budget Transparency</span>
+                        <p class="text-xs text-gray-600">Require annual public reports summarizing defense expenditures while protecting sensitive information.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">03. Outcome-Based Funding</span>
+                        <p class="text-xs text-gray-600">Allocate defense funds based on measurable security outcomes and operational effectiveness.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">04. Civilian Protection</span>
+                        <p class="text-xs text-gray-600">Create compensation and rehabilitation programs for civilians affected by military operations.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">05. Smart Border Systems</span>
+                        <p class="text-xs text-gray-600">Strengthen border fencing, surveillance systems, and coordinated security measures.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">06. Diplomatic Engagement</span>
+                        <p class="text-xs text-gray-600">Maintain active dialogue with Afghanistan to address cross-border terrorism and security concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================= TOPIC B SECTION ================= -->
+        <div id="topic-b" class="space-y-12 hidden transition-all duration-300">
+            <!-- Intro Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-10">
+                <span class="text-xs font-bold tracking-widest text-emerald-700 uppercase block mb-2">Agenda Item II</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Evaluating Government Measures to Stabilize Petroleum Prices Amid Global Oil Market Volatility</h2>
+                <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2 mb-3 border-b pb-2"><i class="fa-solid fa-circle-info na-green-text"></i> Introduction</h3>
+                <p class="text-gray-600 leading-relaxed">Petroleum products are essential for transportation, industry, agriculture, and electricity generation. Global oil prices are highly volatile and are influenced by geopolitical conflicts, production decisions by oil-producing countries, supply chain disruptions, and economic conditions. Since Pakistan imports a significant portion of its petroleum needs, fluctuations in international oil prices directly affect domestic inflation, economic growth, and living standards.</p>
+            </div>
+
+            <!-- Grid: History & Main Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- History -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-timeline na-green-text"></i> History & Background</h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Pakistan has historically relied on imported crude oil and petroleum products.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Global oil crises in the 1970s demonstrated the vulnerability of oil-importing countries.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Rising international oil prices have repeatedly contributed to inflation and economic instability in Pakistan.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">The government periodically adjusts fuel prices, taxes, petroleum levies, and subsidies to manage economic impacts.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Recent geopolitical conflicts, including the Russia-Ukraine war and instability in the Middle East, have increased global oil market uncertainty.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chevron-right text-emerald-600 mt-1.5 shrink-0 text-sm"></i> <span class="text-gray-600">Fuel prices significantly influence transportation costs, electricity generation, and food prices throughout Pakistan.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Main Problems -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                    <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Main Problems</h3>
+                    <div class="space-y-4">
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">1. Dependence on Imported Oil</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Pakistan's heavy reliance on imports exposes the economy to international price fluctuations.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">2. Macroeconomic Inflation</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Higher fuel prices increase transportation and production costs, leading to broader inflation.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">3. Fiscal Deficit & Strain</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Fuel subsidies can heavily strain government finances and critically increase budget deficits.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">4. Currency Depreciation</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">A weaker Pakistani Rupee compounding over time exponentially increases the baseline cost of importing petroleum products.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">5. Energy Security Concerns</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Supply chain adjustments and disruptions directly threaten long-term domestic stability.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-emerald-700">
+                            <h4 class="font-semibold text-gray-900 text-sm">6. Public & Social Dissatisfaction</h4>
+                            <p class="text-xs text-gray-600 mt-0.5">Sharp fuel price increases immediately reduce household purchasing power and risk sparking social unrest.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stakeholders -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-users-rectangle na-green-text"></i> Market & Legislative Stakeholders</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-landmark"></i> Federal Government</h4>
+                        <p class="text-xs text-gray-600">Responsible for pricing policies, taxation frameworks, subsidies, and overall macro-economic management.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-bolt"></i> Ministry of Energy</h4>
+                        <p class="text-xs text-gray-600">The Petroleum Division explicitly regulates local policies and provides strategic oversight of the sector.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-truck-field"></i> Oil Marketing Companies</h4>
+                        <p class="text-xs text-gray-600">Commercial OMCs that handle structural importing, country-wide distribution, and commercial retail sales.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-users"></i> Consumers & Citizens</h4>
+                        <p class="text-xs text-gray-600">General households who fundamentally absorb the immediate daily hit of fuel modifications.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-bus"></i> Transport Sector</h4>
+                        <p class="text-xs text-gray-600">Public/private logistics operators completely locked into cascading cost spikes.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-industry"></i> Industrial Sector</h4>
+                        <p class="text-xs text-gray-600">Local manufacturing units whose structural profit margins dictate market viability.</p>
+                    </div>
+                    <div class="p-4 border border-gray-100 rounded-xl bg-slate-50/50 hover:shadow-sm transition-all lg:col-span-2">
+                        <h4 class="font-bold text-emerald-800 text-sm mb-1"><i class="fa-solid fa-earth-americas"></i> Oil Producers (OPEC+)</h4>
+                        <p class="text-xs text-gray-600">External multi-national syndicates and global sovereign states dictating standard supply capacities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impacts Section -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-chart-line na-green-text"></i> Evaluation of Impacts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <h4 class="font-semibold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-scale-unbalanced-flip text-emerald-600"></i> Economic Impacts</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Sharp adjustments to structural localized inflation metrics and everyday living items.</li>
+                            <li>Increased manufacturing input costs slowing down target GDP expansion rates.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-semibold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-users-viewfinder text-emerald-600"></i> Social Impacts</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Diminishing baseline purchasing parity options for the common public.</li>
+                            <li>Disproportionately harsh spending curves enforced onto underprivileged demographics.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-semibold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-person-military-to-civilian text-emerald-600"></i> Political Impacts</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Persistent administrative duress applied straight onto legislative authorities.</li>
+                            <li>Aggressive demand for transparency regarding state fiscal policy management.</li>
+                        </ul>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-semibold text-gray-900 flex items-center gap-2 text-sm"><i class="fa-solid fa-charging-station text-emerald-600"></i> Energy Impacts</h4>
+                        <ul class="text-xs text-gray-600 list-disc list-inside space-y-1">
+                            <li>Compromised safety margins when dealing with surprise global energy blockades.</li>
+                            <li>Strategic emphasis forced toward planning structural renewable transitions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feasible Solutions -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2 mb-6 border-b pb-2"><i class="fa-solid fa-lightbulb text-amber-500"></i> Feasible Solutions (Framework for Resolutions)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">01. Targeted Assistance Subsidies</span>
+                        <p class="text-xs text-gray-600">Redirect fiscal packages to isolated underprivileged communities via automated support channels instead of open broad discounts.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">02. Strategic Petroleum Reserves</span>
+                        <p class="text-xs text-gray-600">Build physical emergency reserves to artificially support stability margins when international suppliers choke production.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">03. Green Energy Diversification</span>
+                        <p class="text-xs text-gray-600">Systematically scale wind, hydro, solar, and civil nuclear grids to loosen foreign market dependency parameters entirely.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">04. Pricing Transparency Metrics</span>
+                        <p class="text-xs text-gray-600">Enforce mathematical data visibility explaining tax percentages and refinery margins transparently to the general public.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">05. Public Transport Logistics</span>
+                        <p class="text-xs text-gray-600">Fund inner-city commuter lines to aggressively shift citizens off private vehicle consumption dependency models.</p>
+                    </div>
+                    <div class="p-4 bg-emerald-50/40 rounded-xl border border-emerald-100">
+                        <span class="text-xs font-bold text-emerald-800 block mb-1">06. Macro Fiscal Protections</span>
+                        <p class="text-xs text-gray-600">Incorporate state trading architectures to strengthen structural exchange balance models against foreign deficits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assembly Directive Banner -->
+        <section class="mt-16 na-gradient text-white rounded-2xl p-6 md:p-8 shadow-lg relative overflow-hidden">
+            <div class="absolute right-0 bottom-0 translate-x-10 translate-y-10 opacity-10 text-[150px]">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div class="relative z-10 max-w-3xl">
+                <h3 class="text-lg md:text-xl font-bold na-gold-text mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-gavel"></i> Key National Assembly Perspective Directive
+                </h3>
+                <p class="text-sm text-gray-200 leading-relaxed">
+                    For both agendas, delegates must strictly center arguments around the National Assembly's constitutional mandate regarding <strong>legislation, budgeting, legislative oversight, institutional accountability, and macro policy formulation</strong>, rather than executing operational military commands or standalone executive adjustments. High-tier resolutions should dynamically balance <strong>national security parameters against democratic oversights</strong> in Topic A, and <strong>consumer relief programs against state fiscal responsibilities</strong> in Topic B.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-xs py-8 border-t border-gray-800 mt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-2">
+            <p class="font-medium text-gray-300">Pakistan National Assembly — Model United Nations Simulation</p>
+            <p>Study Guide Resource Pack. Generated for Committee Distribution.</p>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Logic Scripts -->
+    <script>
+        function switchTopic(topicId) {
+            const topicA = document.getElementById('topic-a');
+            const topicB = document.getElementById('topic-b');
+            const btnA = document.getElementById('btn-topic-a');
+            const btnB = document.getElementById('btn-topic-b');
+
+            if (topicId === 'topic-a') {
+                topicA.classList.remove('hidden');
+                topicB.classList.add('hidden');
+                btnA.classList.add('tab-active');
+                btnB.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            } else {
+                topicB.classList.remove('hidden');
+                topicA.classList.add('hidden');
+                btnB.classList.add('tab-active');
+                btnA.classList.remove('tab-active');
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
